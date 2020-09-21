@@ -21,11 +21,11 @@ h2 {
 
 ol,
 ul {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 p {
-    font-size: .85em;
+    font-size: 1em;
 }
 
 li a {
@@ -36,7 +36,7 @@ li a {
 
 img {
     float: left;
-    margin-right: em;
+    margin-right: 1.75em;
     padding: .5em;
 }
 
@@ -57,5 +57,19 @@ footer {
 /*localStorage Example*/
 .ex.one,
 p {
+    font-size: 1em;
+}
+/*JavaScript*/
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     font-size: 1em;
 }
