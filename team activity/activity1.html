@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"></input>
+    <button type="buton onclick="readText()">Click Me</button>
+    <div id="inputText"></div>
+</body>
+<script>
+    function readText(){
+        //grabs input data and displays
+        let userText = document.querySelector("input[type='text']").value;
+        document.getElementById('inputText').innerHTML = userText;
+    }
+    function sumNums(num){
+        let n=parseFloat (document.querySelector("input[type='text]'").value);
+let sum=0;
+for (let i = 1;  i <=n;  i+=1) {
+    sum+=i;
+document.getElementById("inputText").innerHTML = userText;
+}}
+</script>
+</html>
