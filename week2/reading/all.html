@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Notes</title>
+    <link rel="stylesheet" ; href="/style.css">
+</head>
+<h1>Notes</h1>
+
+<body>
+    <ul>
+        <li><a href="/index.html">Directory</a></li>
+        <li><a href="/week2/index.html">Week 2 Notes</a></li>
+    </ul>
+    <h2>Ch 3: Array, Logic and Loops</h2>
+    <ol>
+        <li>What are Arrays?</li>
+        <p>-Ordered lists of values using [] brackets. These are not primitive values, but built in objects.
+            -ex.const myArray = [];
+            -ex.const myArray = new Array (); -array construction function.
+            -Arrays have positions/index where you can access certain vaules. These positions/index start with 
+            [0, 1, 2, 3, 4...]. If the element in the array is empty, it will return undefined.<br> 
+            -Adding values ex. heroes [0] = 'Batman'; heroes[1] = 'Wonder Woman'; heroes[2] = 'Flash'; heroes[5] = 'Aquaman';<br>
+            Array Complete: heroes; return: ['Batman', 'Wonderwoman', 'Flash', undefined, undefined, 'Aquaman'] - undefined fills 
+            in the empty index.<br>
+            -ex. If not wanting to assgin to certain index, then can write it out as a whole and not individually.<br>
+            const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Black Widow'];<br>
+            -Removing values from array is by using the delete operator.
+            -ex. delete avengers [3]; return: ['Captain America', 'Iron Man', 'Thor', 'undefined', 'Black Widow'] - Hulk was
+            removed from the array.<br>
+            -Array properties are great way to find the length of the array and to find certain items with in it.<br>
+            -ex. avengers.legnth; return: 6. This will find last item: avengers[anvengers.length - 1]; returns: 'Black Widow'.<br>
+            -4 Array terms to know and how to use.<br>
+            1. Pop - removes last item: anvengers.pop(); return:'Black Widow'. <br>
+            2. Shift - removes first item: avengers.shift(); returns: 'Captain America'.<br>
+            3. Push - appends new value to the end of the array: avengers.push('Black Widow');
+            4. Unshift - appends new value to the beginning of the array: avengers.unshift('Captain American');
+            -Merge Arrays is done when there are more than 2 similar arrays. Use concat() function or spread opperator which uses
+            3 dots (...).<br>
+            -ex. avengers = avengers.concat([array]);<br>
+            -ex. avengers = [...avengers, ...[array] ];<br>
+            -If you wish to not do an array, can us the join() method to turn the array into strings.<br>
+            -ex. avengers.join(); return: 'Captain America, Iron Man, Thor, Hulk, Black Widow'.<br>
+            -Slicing method creates subarrays to seperate certain items.<br>
+            -ex. avengers.slice(2,4); returns: ["Thor", "Hulk"].<br>
+            -Splicing method removes items from the array and replaces with new item.<br> 
+            -ex. avengers.splice(3,1, 'Scarlet Witch'); return: removes ["Hulk"], replace ["Scarlet Witch"].<br>
+            -Other fun terms that can be used are reverse() to reverse the order in array, and sort() to make
+            the array be in alphabetical order.<br>
+            -
+        
+        </p>
+    </ol>
+
+</body>
+
+</html>
