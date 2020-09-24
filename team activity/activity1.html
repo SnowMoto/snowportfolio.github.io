@@ -9,24 +9,42 @@
 
 <body>
     <input type="text" id="userInput"></input>
+    <input type="text" id="userInput2"></input>
     <button type="button" onclick="readText()">Read Text</button>
-    <button type="button" onclick="sumNums()">Sum Total</button>
+    <button type="button" onclick="plus()">Add Me +</button>
     <div id="inputText"></div>
 </body>
 <script>
     function readText() {
         //grabs input data and displays
+
         let userText = document.querySelector("input[type='text']").value;
-        document.getElementById('inputText').innerHTML = userText;
-    }
-        //eventlistener
-    function sumNums(num) {
-        let n = parseFloat(document.getElementById('userInput').value);
-        let sum = 0;
-        for (let i = 1; i <= n; i++) {
-            sum += i;
-            document.getElementById("inputText").innerHTML = sum;
+
+        if (Number.isNaN(parseInt(userText))) {
+
+            document.getElementById('inputText').innerHTML = userText;
+        } else {
+            let numTotal = sumNums(parseInt(userText));
+            document.getElementById('inputText').innerHTML = numTotal;
         }
+
+    }
+
+    function sumNums(num) {
+        let total = 0;
+        for (let i = 1; i <= num; i++) {
+            total += i;
+        }
+        return total;
+    }
+
+    function plus(){
+        let num1 = parseInt(document.getElementById("userInput").value);
+        let num2 = parseInt(document.getElementById("userInput2").value);
+        console.log(typeof num1);
+        let total = num1+num2;
+        //total=sumNums(total); we added the other function for the fun of it.
+        document.getElementById('inputText').innerHTML = total;
     }
 </script>
 
