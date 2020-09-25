@@ -5,6 +5,10 @@ const links = [{
     {
         label: "Week 2",
         url: "week2/index.html",
+    },
+    {
+        label: "Team Actvity 1",
+        url: "team_activity/activity1.html",
     }
 ]
 const weeklyList = document.getElementById("weekList");
