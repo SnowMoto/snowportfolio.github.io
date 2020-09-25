@@ -4,58 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 2 Notes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>A.L.L. Ch 3</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <h1>Notes</h1>
 
 <body>
-    <ul>
-        <li><a href="/index.html">Directory</a></li>
-        <li><a href="/week2/index.html">Week 2 Notes</a></li>
-    </ul>
-    <h2>Ch 3: Array, Logic and Loops</h2>
-    <ol>
-        <li>What are Arrays?</li>
-        <p>-Ordered lists of values using [] brackets. These are not primitive values, but built in objects.
-            -ex.const myArray = [];
-            -ex.const myArray = new Array (); -array construction function.
-            -Arrays have positions/index where you can access certain vaules. These positions/index start with 
-            [0, 1, 2, 3, 4...]. If the element in the array is empty, it will return undefined.<br> 
-            -Adding values ex. heroes [0] = 'Batman'; heroes[1] = 'Wonder Woman'; heroes[2] = 'Flash'; heroes[5] = 'Aquaman';<br>
-            Array Complete: heroes; return: ['Batman', 'Wonderwoman', 'Flash', undefined, undefined, 'Aquaman'] - undefined fills 
-            in the empty index.<br>
-            -ex. If not wanting to assgin to certain index, then can write it out as a whole and not individually.<br>
-            const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Black Widow'];<br>
-            -Removing values from array is by using the delete operator.
-            -ex. delete avengers [3]; return: ['Captain America', 'Iron Man', 'Thor', 'undefined', 'Black Widow'] - Hulk was
-            removed from the array.<br>
-            -Array properties are great way to find the length of the array and to find certain items with in it.<br>
-            -ex. avengers.legnth; return: 6. This will find last item: avengers[anvengers.length - 1]; returns: 'Black Widow'.<br>
-            -4 Array terms to know and how to use.<br>
-            1. Pop - removes last item: anvengers.pop(); return:'Black Widow'. <br>
-            2. Shift - removes first item: avengers.shift(); returns: 'Captain America'.<br>
-            3. Push - appends new value to the end of the array: avengers.push('Black Widow');
-            4. Unshift - appends new value to the beginning of the array: avengers.unshift('Captain American');
-            -Merge Arrays is done when there are more than 2 similar arrays. Use concat() function or spread opperator which uses
-            3 dots (...).<br>
-            -ex. avengers = avengers.concat([array]);<br>
-            -ex. avengers = [...avengers, ...[array] ];<br>
-            -If you wish to not do an array, can us the join() method to turn the array into strings.<br>
-            -ex. avengers.join(); return: 'Captain America, Iron Man, Thor, Hulk, Black Widow'.<br>
-            -Slicing method creates subarrays to seperate certain items.<br>
-            -ex. avengers.slice(2,4); returns: ["Thor", "Hulk"].<br>
-            -Splicing method removes items from the array and replaces with new item.<br> 
-            -ex. avengers.splice(3,1, 'Scarlet Witch'); return: removes ["Hulk"], replace ["Scarlet Witch"].<br>
-            -Other fun terms that can be used are reverse() to reverse the order in array, and sort() to make
-            the array be in alphabetical order.<br>
-            -
-        
-        </p>
-    </ol>
-
+    <div class="main">
+        <ul>
+            <li><a href="/index.html">Directory</a></li>
+            <li><a href="/week2/index.html">Week 2 Notes</a></li>
+            <li><a href="/week2/example/allexample.html">A.L.L. Code Example</a></li>
+            <li><a href="/week2/example/functexample.html">Functions Code Example</a></li>
+        </ul>
+        <h2>Ch 3: Array, Logic and Loops</h2>
+        <ol>
+            <li>Arrays?</li>
+            <p>-Ordered lists of values using [] brackets. These are not primitive values, but built in objects.
+                -ex.const myArray = [];
+                -ex.const myArray = new Array (); -array construction function.
+                -Arrays have positions/index where you can access certain vaules. These positions/index start with
+                [0, 1, 2, 3, 4...]. If the element in the array is empty, it will return undefined.<br>
+                -Adding values ex. heroes [0] = 'Batman'; heroes[1] = 'Wonder Woman'; heroes[2] = 'Flash'; heroes[5] =
+                'Aquaman';<br>
+                Array Complete: heroes; return: ['Batman', 'Wonderwoman', 'Flash', undefined, undefined, 'Aquaman'] -
+                undefined fills
+                in the empty index.<br>
+                -ex. If not wanting to assgin to certain index, then can write it out as a whole and not
+                individually.<br>
+                const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Black Widow'];<br>
+                -Removing values from array is by using the delete operator.
+                -ex. delete avengers [3]; return: ['Captain America', 'Iron Man', 'Thor', 'undefined', 'Black Widow'] -
+                Hulk was
+                removed from the array.<br>
+                -Array properties are great way to find the length of the array and to find certain items with in
+                it.<br>
+                -ex. avengers.legnth; return: 6. This will find last item: avengers[anvengers.length - 1]; returns:
+                'Black Widow'.<br>
+                -4 Array terms to know and how to use.<br>
+                1. Pop - removes last item: anvengers.pop(); return:'Black Widow'. <br>
+                2. Shift - removes first item: avengers.shift(); returns: 'Captain America'.<br>
+                3. Push - appends new value to the end of the array: avengers.push('Black Widow');
+                4. Unshift - appends new value to the beginning of the array: avengers.unshift('Captain American');
+                -Merge Arrays is done when there are more than 2 similar arrays. Use concat() function or spread
+                opperator which uses
+                3 dots (...).<br>
+                -ex. avengers = avengers.concat([array]);<br>
+                -ex. avengers = [...avengers, ...[array] ];<br>
+                -If you wish to not do an array, can us the join() method to turn the array into strings.<br>
+                -ex. avengers.join(); return: 'Captain America, Iron Man, Thor, Hulk, Black Widow'.<br>
+                -Slicing method creates subarrays to seperate certain items.<br>
+                -ex. avengers.slice(2,4); returns: ["Thor", "Hulk"].<br>
+                -Splicing method removes items from the array and replaces with new item.<br>
+                -ex. avengers.splice(3,1, 'Scarlet Witch'); return: removes ["Hulk"], replace ["Scarlet Witch"].<br>
+                -Other fun terms that can be used are reverse() to reverse the order in array, and sort() to make
+                the array be in alphabetical order.<br>
+                -Sets are used to add data and check data for duplicates. If you enter data that already exists then it
+                ill be ignored.
+                -ex. const list = new Set(); list.add(1); return = Set: {1} etc.
+                -ex. const list = new Set('Hello'); return = Set: {'H', 'e', 'l', 'o'}. - note L is used already and
+                function ignores the 2nd L.
+            </p>
+            <li>Memory Leak?</li>
+            <p>-It is when the data is full and any values entered cannot be retained. The memory is being used to store
+                values that are no longer
+                required by the program, which wastes system resources.<br>
+                -Garbage collection/WeakSet - used to to auto remove items from the memory that are no long needed for
+                the program. Only non-primitive data
+                can be added to the WeakSet. FYI C++ storage is only manually removed by programer.<br>
+                -ex. const weak = new WeakSet();const array = [1,2,3]; weak.add(array); returns WeakSet {}.<br>
+                test it out: weak.has(array) = true; weak.delet(array); = true, weak.has(array) = false. <---Array has
+                    been removed.<br>
+            </p>
+            <li>Logic?</li>
+            <p>
+                -It allow control over the flow of the program. Using If () or else() statements.<br>
+                -ex.if (conditio) { code to run if condition is true.} else {code to run if condition is false.}<br>
+                -ex. const n = 12; if (n%2 === 0) {console.log ('n is an even number');} else {console.log('n is an odd
+                number');} return = 'n is an even number'.<br>
+                -The short hand way of writing if / else statments is using the terney operator of ?, but need to use 3
+                operands.<br>
+                -ex. const n=5; n%2 === 0 ? console.log('n is an even number') : console.log('n is an odd number');
+                return = 'n is an odd number'.<br>
+                -Switch statment is handy when you have many strings of if / else statements. Make it easier to follow
+                testing.<br>
+                -ex. switch(use a key case word for the value. ex. 'numbers');<br>
+            </p>
+            <li>Loops?</li>
+            <p>
+                -Used to run a code block to a certain condition. There are 5 loops:<br>
+                1. While Loop - let bottles = 10; while(bottles > 0){console.log('There were ${bottles} green bottles,
+                hanging on a wall.'); bottles--;}.<br>
+                2. Infinite Loop - this happens when a loops condition doesnt get met and get stuck in a loop, which can
+                crash the system.<br>
+                -ex. let n=1; while(n>0){console.log('Hello'); n++;} ---n will always be greater than 0.<br>
+                3. Do...While Loops - similar to while loop but the condition comes after the block.<br>
+                -ex. let bottles = 10; do{console.log('There were ${bottles} green bottles, hanging on the wall.');
+                bottles--;} while (bottles > 0).<br>
+                4. For Loop - most commonly used in coding. the code runs before the loops starts and then initializes
+                the variables use in the loop.
+                The condition has to be met for the loop to continue and after the code is it wil do next after each run
+                through the loop.<br>
+                -ex. for (let bottlws = 10; bottles > 0; bottles--){console.log('There were ${bottles} green bottles,
+                hanging on the wall.');}<br>
+                5. Nested for Loops - placeing loops inside another loop. Runs the inner loop first before going through
+                the outerloop.
+            </p>
+        </ol>
+    </div>
 </body>
-    <footer>
-        <p>&copy;2020 | Chelsea Thomson | WDD330
-    </footer>
+<footer>
+    <p>&copy;2020 | Chelsea Thomson | WDD330
+</footer>
+
 </html>

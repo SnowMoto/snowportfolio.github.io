@@ -4,82 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 2 Notes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Program Basics Ch 2</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <h1>Notes</h1>
 
 <body>
-    <ul>
-        <li><a href="/index.html">Directory</a></li>
-        <li><a href="/week2/index.html">Week 2 Notes</a></li>
-    </ul>
+    <div class="main">
+        <ul>
+            <li><a href="/index.html">Directory</a></li>
+            <li><a href="/week2/index.html">Week 2 Notes</a></li>
+            <li><a href="/week2/example/allexample.html">A.L.L. Code Example</a></li>
+            <li><a href="/week2/example/functexample.html">Functions Code Example</a></li>
+        </ul>
 
-    <h2>Ch 2:Programming Basics </h2>
-    <ol>
-        <li>What is Programming?</li>
-        <p>Using a series of coding for the computer to perform tasks. Computers speak different languages, there are 3
-            languages:<br>
-            * Low-Level Programming Language - this is written in machine code and assembly language. This is working
-            with the hardware
-            invovling abstract coding that is connected to the computer architecture.<br>
-            * High-Level Programming Language- written language in C, C++ and Java that then compile into machine code
-            and executed. These languages
-            are very fast and ideal for writing games, professional business software and most apps.<br>
-            * Scripting Language - also high-level but interpreted (translate into machine code at run time).
-            This is slower than compiled languages, but it has grown and making difficult to see difference between
-            compiled and interpreted
-            languages.
-        </p>
-        <li>What is Javasript?</li>
-        <p> -It is a high-level scripting language that is both interpreted and compiled at run time.<br>
-            -It is the web language. Nearly all browsers can run JavaScript, but it is tricky language to grasp.<br>
-            -There are different features unique to the program and terms. With the dynamic
-            languages programs can change while running and changes in the background.<br>
-            -ex. User typing in information and in the background, JavaScript can check the typing.<br>
-            -There are 3 key words to not use as variables; NaN, infinity and undifined. These are used by Java as
-            values
-            for when your code does not work right.<br>
-            -There are 6 primitive data types used in coding. Any values that are not primitive data becomes an
-            object.<br><br>
-            1. String = typeof "hello" - provides information<br>
-            2. Number = typeof 10 - provides information<br>
-            3. Boolean = typeof true - values are either true of false. Logical operators can be used to check compound
-            statements
-            are true or false. <br>
-            4. Symbols = ^, &&, ||, ! - unique values.<br>
-            5. Undefined = indicates absence of the variable.<br>
-            6. Null = 10 + null; - behaves like a 0, answer would be 10.<br><br>
-            -Non-Primitive:<br>
-            1. Object= typeof { ninja: "turtle"}<br>
-            2. Array = typeof [1, 2, 3]<br>
-            3 Function = function meWantMore(),<br><br>
-            -Operator applies opperation to a value (operand) and a unary operator only requires operand;
-            ex.typeof (operator) "Hello" (string/operand).<br>
-            -Binary operator needs 2 operands; ex. 3 (operand) + (operator) 5 (operand).
-            Ternary operator needs 3 operands.
-            -Variable is used in programing to refer the value stored in the memory.<br>
-            -Values can compare to see if greater, equal than or less than other values.<br>
-            -Variables and values are assigned to one another using =.<br>
-            -Logical operators = used in primitive value or objects to determine whether the values are
-            truthy or falsy. There are 3 main types:<br>
-            1. !(Logical NOT) - ! infront of a value turns in Boolean and returns opposite value. <br>
-            -ex. !true; = false (negating true returns false), !0; = true - 0 is falsy and negating it returns true.<br>
-            **Shortcut - using 2 !! will find out if the value is truthy or falsy.<br>
-            2. &&(Logical AND) - logical AND condition. Works on 2 or more values and only show true.<br>
-            -ex. Wearing shoes and over 18 = "shoes" && 18; - both true<br>
-            -ex. Wearing shoes and over 18 = "shoes" && 0; - 0 bc it is false.<br>
-            3. || (Logical OR) - only need to have 1 value be true.<br>
-            -ex. Wearing shoes OR over 18 = "shoes" || 0; shoes is the value that is true.<br>
-            -ex. NaN || undefined; both are falsy and returns undifined.<br>
-            - ^ symbol gets confusing on how to use it. It is NOT USED to notate exponents.This is used on non-integers
-            to evaluate to 1 operand true or 0 if both operands are true or false.<br>
-            -.ex. 1 ^ o; = true / true ^ true; = false.
-        </p>
-        <li><a href="https://www.w3schools.com/java/java_operators.asp">Operators and Usage @w3schools</a></li>
+        <h2>Ch 2:Programming Basics </h2>
+        <ol>
+            <li>What is Programming?</li>
+            <p>Using a series of coding for the computer to perform tasks. Computers speak different languages, there
+                are 3
+                languages:<br>
+                * Low-Level Programming Language - this is written in machine code and assembly language. This is
+                working
+                with the hardware
+                invovling abstract coding that is connected to the computer architecture.<br>
+                * High-Level Programming Language- written language in C, C++ and Java that then compile into machine
+                code
+                and executed. These languages
+                are very fast and ideal for writing games, professional business software and most apps.<br>
+                * Scripting Language - also high-level but interpreted (translate into machine code at run time).
+                This is slower than compiled languages, but it has grown and making difficult to see difference between
+                compiled and interpreted
+                languages.
+            </p>
+            <li>What is Javasript?</li>
+            <p> -It is a high-level scripting language that is both interpreted and compiled at run time.<br>
+                -It is the web language. Nearly all browsers can run JavaScript, but it is tricky language to grasp.<br>
+                -There are different features unique to the program and terms. With the dynamic
+                languages programs can change while running and changes in the background.<br>
+                -ex. User typing in information and in the background, JavaScript can check the typing.<br>
+                -There are 3 key words to not use as variables; NaN, infinity and undifined. These are used by Java as
+                values
+                for when your code does not work right.<br>
+                -There are 6 primitive data types used in coding. Any values that are not primitive data becomes an
+                object.<br><br>
+                1. String = typeof "hello" - provides information<br>
+                2. Number = typeof 10 - provides information<br>
+                3. Boolean = typeof true - values are either true of false. Logical operators can be used to check
+                compound
+                statements
+                are true or false. <br>
+                4. Symbols = ^, &&, ||, ! - unique values.<br>
+                5. Undefined = indicates absence of the variable.<br>
+                6. Null = 10 + null; - behaves like a 0, answer would be 10.<br><br>
+                -Non-Primitive:<br>
+                1. Object= typeof { ninja: "turtle"}<br>
+                2. Array = typeof [1, 2, 3]<br>
+                3 Function = function meWantMore(),<br><br>
+                -Operator applies opperation to a value (operand) and a unary operator only requires operand;
+                ex.typeof (operator) "Hello" (string/operand).<br>
+                -Binary operator needs 2 operands; ex. 3 (operand) + (operator) 5 (operand).
+                Ternary operator needs 3 operands.
+                -Variable is used in programing to refer the value stored in the memory.<br>
+                -Values can compare to see if greater, equal than or less than other values.<br>
+                -Variables and values are assigned to one another using =.<br>
+                -Logical operators = used in primitive value or objects to determine whether the values are
+                truthy or falsy. There are 3 main types:<br>
+                1. !(Logical NOT) - ! infront of a value turns in Boolean and returns opposite value. <br>
+                -ex. !true; = false (negating true returns false), !0; = true - 0 is falsy and negating it returns
+                true.<br>
+                **Shortcut - using 2 !! will find out if the value is truthy or falsy.<br>
+                2. &&(Logical AND) - logical AND condition. Works on 2 or more values and only show true.<br>
+                -ex. Wearing shoes and over 18 = "shoes" && 18; - both true<br>
+                -ex. Wearing shoes and over 18 = "shoes" && 0; - 0 bc it is false.<br>
+                3. || (Logical OR) - only need to have 1 value be true.<br>
+                -ex. Wearing shoes OR over 18 = "shoes" || 0; shoes is the value that is true.<br>
+                -ex. NaN || undefined; both are falsy and returns undifined.<br>
+                - ^ symbol gets confusing on how to use it. It is NOT USED to notate exponents.This is used on
+                non-integers
+                to evaluate to 1 operand true or 0 if both operands are true or false.<br>
+                -.ex. 1 ^ o; = true / true ^ true; = false.
+            </p>
+            <li><a href="https://www.w3schools.com/java/java_operators.asp">Operators and Usage @w3schools</a></li>
+    </div>
 </body>
 <footer>
     <p>&copy;2020 | Chelsea Thomson | WDD330
-    </footer>
+</footer>
 
 </html>

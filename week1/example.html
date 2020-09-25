@@ -10,52 +10,58 @@
 <h1>localStorage Javascript Example</h1>
 
 <body>
-    <ul>
-        <li><a href="index.html">Week1</a></li>
-    </ul>
-    <div class="ex.one">
-        <p>Information gets input by user, and web developer uses Javascript: localStorage to save information.<br>
-        </p>
-        <figure>
-            <pre>
+    <div class="main">
+        <ul>
+            <li><a href="index.html">Week1</a></li>
+        </ul>
+        <div class="ex.one">
+            <p>Information gets input by user, and web developer uses Javascript: localStorage to save information.<br>
+            </p>
+            <figure>
+                <pre>
             <code>
-                function saveStory(){
-                    var storyName = document.getElementById(“name_input”).value
-                    var storyHTML = document.getElementById(“story_editor”).value
-                    localStorage.setItem(storyName, storyHTML) <-----here is key & value.
-                    }
+function saveStory()
+  var storyName = document.getElementById(“name_input”).value
+  var storyHTML = document.getElementById(“story_editor”).value
+  localStorage.setItem(storyName (key), storyHTML (value)) 
+  }
             </code>
         </pre>
-        </figure>
-        <p>Can also be used for reloading what the user saved. Say they were reading a story, saved it and the next day
-            can reload it.</p>
-        <figure>
-            <pre>
+            </figure>
+            <p>Can also be used for reloading what the user saved. Say they were reading a story, saved it and the next
+                day
+                can reload it.</p>
+            <figure>
+                <pre>
             <code>
-                function loadStory(){
-                    var storyName = document.getElementById(“name_input”).value
-                    var storyHTML = localStorage.getItem(storyName)
-                    document.getElementById(“story_editor”).value = storyHTML
-                   }
+function loadStory(){
+  var storyName = document.getElementById(“name_input”).value
+  var storyHTML = localStorage.getItem(storyName)
+  document.getElementById(“story_editor”).value = storyHTML
+  }
             </code>
         </pre>
-        </figure>
-        <h2>There are other Javafunctions with localStorage:</h2>
-        <p> -localStorage.getItem(key): Retrieves the value associated with the key. <br>
-            -localStorage.removeItem(key): Removes an item from storage. The key and the value will both be removed to
-            open space.<br>
-            -localStorage.length: Returns the number of key/value pairs in the database. Usually used in a loop with the
-            key().<br>
-            -localStorage.key(i): Given an integer i, this method finds the corresponding key. This method is used in a
-            loop to retrieve all the keys database.<br>
-            Then each key is used to look up the corresponding value.
-            -localStorage.clear(): Clears all key/value pairs from localStorage. This will wipe everything clean and
-            nothing will be backed up.
-        </p>
+            </figure>
+            <h2>There are other Javafunctions with localStorage:</h2>
+            <p> -localStorage.getItem(key): Retrieves the value associated with the key. <br>
+                -localStorage.removeItem(key): Removes an item from storage. The key and the value will both be removed
+                to
+                open space.<br>
+                -localStorage.length: Returns the number of key/value pairs in the database. Usually used in a loop with
+                the
+                key().<br>
+                -localStorage.key(i): Given an integer i, this method finds the corresponding key. This method is used
+                in a
+                loop to retrieve all the keys database.<br>
+                Then each key is used to look up the corresponding value.
+                -localStorage.clear(): Clears all key/value pairs from localStorage. This will wipe everything clean and
+                nothing will be backed up.
+            </p>
+        </div>
     </div>
 </body>
 <footer>
     <p>&copy;2020 | Chelsea Thomson | WDD330
-    </footer>
+</footer>
 
 </html>

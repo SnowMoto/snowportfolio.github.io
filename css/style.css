@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(253, 253, 251);
+    background-color: rgb(0, 0, 68);
     color: rgb(0, 0, 83);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -20,6 +20,11 @@ h2 {
     font-size: 1.25em;
 }
 
+.main{
+    background-color: rgb(255, 255, 215);
+    padding: .5em;
+}
+
 ol,
 ul {
     font-size: 1em;
@@ -37,14 +42,16 @@ li a {
 
 img {
     float: left;
-    margin-right: 1.75em;
+    margin-right: 1.8em;
     padding: .5em;
 }
 
-code {
+pre {
+    background-color: rgb(0, 0, 68);
     color: rgb(0, 216, 18);
-    font-size: 1.2em;
+    font-size: 1.em;
     font-weight: 700;
+    padding: 1em;
 }
 
 footer {
