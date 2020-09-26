@@ -18,7 +18,43 @@
             <li><a href="/week2/example/functexample.html">Functions Code Example</a></li>
         </ul>
         <ol>
-            <li>What </li>
+            <li>What is a function?</li>
+            <p>-It is a first-class objects that behave similar to primitive data and obects in language.<br>
+                -Can assign variables, arrays and can return by other functions.<br>
+                -There are 3 main functions that are commonly used in JavaScript:<br>
+                1. Function Declarations - declaring function().<br>
+                -ex. function hello(){console.log('Hello World!');}<br>
+                2.Function Expression - assign a anonymous function to a variable.<br>
+                -ex. const goodbye = function(){console.log('Goodbye World!');};<br>
+                3. Function Constructor - declared as an constructor for the body to be a string.
+                BUT it is NOT recommended to use this form as there can be problems with association inside the
+                string.<br>
+                -ex. const hi = new Function('console.log("Hi World!");');<br>
+                -Return Values - this is used to return value or it will be undefined.<br>
+                -ex. function howdy(){return 'Howdy Worl!'};<br>
+                -Parameters and Arguments - param. is a set when function is defined. Argument is the invoked
+                function.<br>
+                -ex. parameter = function square(x){ return x*x;} - argument = square(4.5); returns = 20.25.<br>
+                -It is possible to assign a variable to the parameter without an argument.<br>
+                -ex. function hellow(name='World'){console.log('Hello ${name}!);} - invoke = hello(); return = 'Hello
+                World!'.<br>
+                <li>What are Arrow functions used for?</li>
+                <p>-New syntax for declaring functions with less verbose syntax. Best used for single
+                    parameters, one line box, and return isn't required.<br>
+                    -ex. const square = x => x*x;<br>
+                    -ex. const hello = () => alert('Hellow World!');<br>
+                    -Hoist - used to move all variables and function declarations to the top of the scope.<br>
+                    -Var Hoist - moves variables to the top of the scope.<br>
+                    -Callbacks - passes argument to another arument.<br>
+                    -ex. function sing(song){console.log('I sing to ${song});} sing('Let it Go').<br>
+                    function sing(song,callback){console.log('I sing to ${song}.'); callback();} ---given parameter
+                    then invoked inside the function.<br>
+                    -If function is not provided an argument?<br>
+                    -ex. if(typeof(callback) === 'function'){callback();}<br>
+                    <li>To learn more and practice: Click--> <a href="https://www.jshero.net/en/koans/function.html">JSHero</a></li>
+
+                </p>
+            </p>
         </ol>
 
     </div>
